@@ -150,8 +150,8 @@ def bkapp(doc):
     # workstation_1
     p41 = xaxis_formatter_(create_fig("a", "firebrick", "firebrick", source41, source411), "Temperature Sensor 1", 15)
     p42 = xaxis_formatter_(create_fig("a", "firebrick", "firebrick", source42, source421), "Temperature Sensor 2", 15)
-    p44 = xaxis_formatter_(create_fig("a", "firebrick", "firebrick", source44, source441), "Temperature Sensor 4", 15)
-    p45 = xaxis_formatter_(create_fig("a", "firebrick", "firebrick", source45, source451), "Temperature Sensor 5", 15)
+    p44 = xaxis_formatter_(create_fig("a", "firebrick", "firebrick", source44, source441), "Temperature Sensor 3", 15)
+    p45 = xaxis_formatter_(create_fig("a", "firebrick", "firebrick", source45, source451), "Temperature Sensor 4", 15)
 
     # workstation_2
     p51 = xaxis_formatter_(create_fig("a", "firebrick", "firebrick", source51, source511), "Temperature Sensor 1", 15)
