@@ -104,7 +104,7 @@ def bkapp(doc):
 
     def update():
         # workstation_1
-        _, plc = plc_connect("10.10.30.42", 0, 2, 102, 3, 2)
+        _, plc = plc_connect("ip address", 0, 2, 102, 3, 2)
         if _ == True:
 
             source41.stream(dict(x=[datetime.now()],
@@ -125,7 +125,7 @@ def bkapp(doc):
                                  y=[get_real(plc.read_area(areas["DB"], 405, 330, S7WLReal), 0)]), rollover=30)
 
         # workstation_2
-        _, plc2 = plc_connect("10.10.30.50", 0, 2, 102, 3, 2)
+        _, plc2 = plc_connect("ip address", 0, 2, 102, 3, 2)
         if _ == True:
 
             source51.stream(dict(x=[datetime.now()],
@@ -189,4 +189,3 @@ if __name__ == '__main__':
     print('Multiple connections may block the Bokeh app in this configuration!')
     print('See "flask_gunicorn_embed.py" for one way to run multi-process')
     app.run(port=8000)
-
